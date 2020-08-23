@@ -60,3 +60,39 @@ data.trial2.forEach((data) => {
     console.log(data);
 })
 
+/**
+ * use of operators
+ */
+
+let value = 3 + 2; // => 5: addition
+console.log(value)
+value = 3 - 2; // 1: substraction
+value = 3 * 2; // 6: multiplication
+value = 3 / 2; // 1.5: division
+
+console.log(points[1].y - points[0].y) // outputs 2
+
+const stringConcat = "3" + "2";
+console.log(stringConcat);
+
+/**
+ * Shorthand operators
+ */
+let count = 0;
+count++;
+count--;
+count += 2;
+
+count *= 3;
+console.log(count) // output is 6
+
+/**
+ * equality and relational operators test whether two values are equal
+ */
+let x = 2, y = 3;
+console.log(x === y) // output is false
+console.log(x !== y) // output is true
+console.log(x < y); // output is true
+console.log(x > y); // output is false
+console.log(x <= y); // output is false
+console.log(x >= y); // output is false

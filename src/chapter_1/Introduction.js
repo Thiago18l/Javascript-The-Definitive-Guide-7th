@@ -89,10 +89,23 @@ console.log(count) // output is 6
 /**
  * equality and relational operators test whether two values are equal
  */
-let x = 2, y = 3;
+x = 2, y = 3;
 console.log(x === y) // output is false
 console.log(x !== y) // output is true
 console.log(x < y); // output is true
 console.log(x > y); // output is false
 console.log(x <= y); // output is false
 console.log(x >= y); // output is false
+
+/**
+ * Functions
+ */
+function plus1 (value) {
+    return value + 1;
+}
+value = 3;
+console.log(plus1(value)) // output is 4
+let square = function (x) {
+    return x * x;
+}
+console.log(square(64))

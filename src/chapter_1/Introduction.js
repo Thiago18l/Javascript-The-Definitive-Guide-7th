@@ -109,3 +109,33 @@ let square = function (x) {
     return x * x;
 }
 console.log(square(64))
+
+/**
+ * Arrow functions
+ */
+const plusOne = x => x + 1;
+console.log(plusOne(20))
+
+const squareFunction = x => x * x;
+
+squareFunction(4); // output is 16
+
+/**
+ * When we use functions with objects, we get methods...
+ */
+
+let array = [];
+array.push(1, 2, 3, 4, 5); // add elements to array
+
+array.reverse();
+console.log(array);
+
+points.dist = function () {
+    let p1 = this[0];
+    let p2 = this[1];
+    let a = p2.x - p1.x;
+    let b = p2.y - p1.y;
+    return Math.sqrt(a * a + b * b)
+}
+
+console.log(points.dist())

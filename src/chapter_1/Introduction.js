@@ -139,3 +139,35 @@ points.dist = function () {
 }
 
 console.log(points.dist())
+
+function sum(array) {
+    let sum = 0;
+    for (let x of array) {
+        sum += x;
+    }
+    return sum;
+}
+console.log(sum(array))
+
+function factorial (n) {
+    let product = 1;
+    while (n > 1) {
+        product *= n;
+        n--;
+    }
+    return product;
+}
+console.log(factorial(5))
+
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    distance () {
+        return Math.sqrt(this.x * this.x + this.y * this.y)
+    }
+}
+let p = new Point(10, 5);
+
+console.log(p.distance())

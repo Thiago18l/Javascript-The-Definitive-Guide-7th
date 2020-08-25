@@ -45,3 +45,26 @@ Math.log(512) / Math.LN2
 Math.exp(3)
 
 console.log(Math.cbrt(27))
+
+let x = .3 - .2;
+
+let y = .2 - .1;
+
+console.log(x === y)
+
+/**
+ * Arbitrary precision integers with bigint
+ */
+let bigint = 0b111111n;
+console.log(bigint)
+
+
+/**
+ * Dates and Times
+ */
+
+ let timestamp = Date.now();
+ let now = new Date();
+ let ms = now.getTime();
+ let iso = now.toISOString();
+ console.log(timestamp, now, ms, iso);
